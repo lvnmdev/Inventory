@@ -2,7 +2,7 @@
     <article>
         <section>
             <div>
-                <h3 class="subTitle">REGISTRATION</h3>
+                <h3 class="subTitle">LOGIN</h3>
             </div>
         </section>
         <section>

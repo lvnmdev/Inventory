@@ -24,17 +24,19 @@
         <div>
             <div class="mainHeader" id="mainHeader">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-12 col-xs-12 col-md-4">
                         <div class="search">
-                            <input class="searchInput" type="search"><button class="btn searchBtn" type="submit"><i class="fa fa-search"></i></button>
+                            <div class="search-container">
+                                <input class="searchInput" type="search"><button class="btn searchBtn" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-12 col-xs-12 col-md-4">
                         <div class="logo">
                             <h1><a href="<?php echo base_url("Main/index")?>"><?php echo $pageTitle ?></a></h1>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-12 col-xs-12 col-md-4">
                         <div class="login">
                             <p><a href="<?php echo base_url("Main/login")?>">SIGN-IN</a> | <a href="<?php echo base_url("Main/registration")?>">SIGN-UP</a></p>
                         </div>

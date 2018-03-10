@@ -28,6 +28,9 @@
         display: none;
     }
 
+    header .search, header .login {
+        text-align: center !important;
+    }
 }
 
 @media (min-device-width : 768px) {
@@ -170,7 +173,7 @@ header .login a:hover {
 
 
 header .search {
-    padding: 20px;
+    padding: 15px;
     text-align: left;
 }
 
@@ -180,6 +183,7 @@ header .search .searchBtn {
     color: white;
     background-color: transparent;
     font-size: 1.5em;
+    float: right;
 }
 
 header .search .searchBtn:hover {
@@ -187,16 +191,24 @@ header .search .searchBtn:hover {
     transition: color .3s ease-in-out;
 }
 
-header .search .searchInput {
-    padding: 5px;
+header .searchInput {
+    padding: 7px;
+    width: 83.5%;
+    background: transparent;
+    border: none;
+    float: left;
+}
+
+header .search .search-container {
     border: 2px solid white;
     border-radius: 5px;
     height: auto;
     color: white;
     background-color: black;
+    overflow: hidden;
 }
 
-header .search .searchInput:focus{
+header .search .search-container:focus{
     border: 2px solid gray;
     transition: border .3s ease-in-out;
 }
@@ -294,15 +306,6 @@ footer .logo a{
 
 footer .logo a:hover{
     color: white;
-}
-
-footer .social-media a, footer .social-media i{
-    color: white;
-}
-
-footer .social-media a:hover, footer .social-media i:hover{
-    color: gray;
-    transition: color .3s ease-in-out;
 }
 
 footer .footer-menu ul li{
