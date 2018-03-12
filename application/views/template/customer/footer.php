@@ -9,9 +9,9 @@
                 <div class="col-xs-6 col-sm-6 col-md-6">
                     <div class="footer-menu">
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">F.A.Q.</a></li>
+                            <li><a href="<?php echo base_url("Main/about_us")?>">About Us</a></li>
+                            <li><a href="<?php echo base_url("Main/contact_us")?>">Contact Us</a></li>
+                            <li><a href="<?php echo base_url("Main/faq")?>">F.A.Q.</a></li>
 
                         </ul>
                     </div>

@@ -24,6 +24,28 @@ class Main extends CI_Controller {
 		$this->load->view('template/customer/content', $data);
 	}
 
+	public function about_us(){
+		$data['pageTitle'] = 'Petalia Furnitures';
+
+		$data['content'] = 'common/about-us';
+		$this->load->view('template/customer/content', $data);
+	}
+
+	public function contact_us(){
+		$data['pageTitle'] = 'Petalia Furnitures';
+
+		$data['content'] = 'common/contact-us';
+		$this->load->view('template/customer/content', $data);
+
+	}
+
+	public function faq(){
+		$data['pageTitle'] = 'Petalia Furnitures';
+
+		$data['content'] = 'common/faq';
+		$this->load->view('template/customer/content', $data);
+	}
+
 
 	//Functionals
 
