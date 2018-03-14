@@ -20,7 +20,7 @@
 		<section>
 			<div class="user-dashboard card container">
 				<div class="table-responsive">
-					<table class="table table-sm table-hover">
+					<table id="table_id" class="table table-condensed table-striped table-hover">
 						<thead>
 							<tr>
 								<th scope="col">ID</th>

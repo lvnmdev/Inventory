@@ -21,6 +21,8 @@
     </footer>
     <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.js');?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.js');?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/js/datatables.min.js');?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/js/responsive.bootstrap.min.js');?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/js/script.js');?>"></script>
     <script defer src="<?php echo base_url('assets/js/fontawesome-all.min.js');?>"></script>
     </body>
