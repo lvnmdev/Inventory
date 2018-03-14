@@ -3,7 +3,7 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6">
                     <div class="logo">
-                        <strong><h3><a href="<?php echo base_url("Main/index")?>"><?php echo $pageTitle ?></a></small></h3>
+                        <strong><h3><a href="<?php echo base_url("Products/index")?>"><?php echo $pageTitle ?></a></small></h3>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6">

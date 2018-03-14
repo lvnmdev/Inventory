@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css");?>">
     <link rel="stylesheet" href="<?php echo base_url("assets/css/fontawesome-all.min.css");?>">
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/admin.css"); ?>"> 
+    <link rel="stylesheet" href="<?php echo base_url("assets/css/admin.css"); ?>">
+    <link rel="stylesheet" href="<?php echo base_url("assets/css/util.css"); ?>"> 
     <title>Petalia Furnitures</title>
 </head>
 
@@ -35,8 +36,7 @@
             <div class="text-center">
                 <ul class="breadcrumb">
                     <li class=""><a href="<?php echo base_url("Products/index")?>">DASHBOARD</a></li>
-                    <li class=""><a href="<?php echo base_url("Sales/sales_statistics")?>">SALES STATISTICS</a></li>
-                    <li class=""><a href="<?php echo base_url("Sales/sales_history")?>">SALES HISTORY</a></li>
+                    <li class=""><a href="<?php echo base_url("Products/inventory")?>">INVENTORY</a></li>
                     <li class=""><a href="<?php echo base_url("Sales/customers")?>">CUSTOMERS</a></li>
                     <li class=""><a href="<?php echo base_url("Sales/profile")?>">PROFILE</a></li>
                 </ul>
@@ -58,8 +58,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class=""><a href="<?php echo base_url("Products/index")?>">DASHBOARD</a></li>
-                        <li class=""><a href="#">SALES STATISTICS</a></li>
-                        <li class=""><a href="#">SALES HISTORY</a></li>
+                        <li class=""><a href="<?php echo base_url("Products/inventory")?>">INVENTORY</a></li>
+                        <li class=""><a href="<?php echo base_url("Products/suppliers")?>">SUPPLIERS</a></li>
                         <li class=""><a href="#">CUSTOMERS</a></li>
                         <li class=""><a href="#">PROFILE</a></li>
                         <li class="dropdown">

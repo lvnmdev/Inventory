@@ -5,7 +5,14 @@ class Products extends CI_Controller {
 		$data['pageTitle'] = 'Petalia Furnitures';
 
 		$data['content'] = 'products-views/dashboard';	
-		$this->load->view('template/admin/content', $data);
+		$this->load->view('template/products/content', $data);
+	}
+
+	public function inventory(){
+		$data['pageTitle'] = 'Petalia Furnitures';
+
+		$data['content'] = 'products-views/inventory';
+		$this->load->view('template/products/content', $data);
 	}
 }
 

@@ -34,11 +34,11 @@
         <nav class="nav-web">
             <div class="text-center">
                 <ul class="breadcrumb">
-                <li class=""><a href="<?php echo base_url("Purchase/index")?>">DASHBOARD</a></li>
-                        <li class=""><a href="<?php echo base_url("Sales/sales_statistics")?>">SALES STATISTICS</a></li>
-                        <li class=""><a href="<?php echo base_url("Sales/sales_history")?>">SALES HISTORY</a></li>
-                        <li class=""><a href="<?php echo base_url("Sales/customers")?>">CUSTOMERS</a></li>
-                        <li class=""><a href="<?php echo base_url("Sales/profile")?>">PROFILE</a></li>
+                    <li class=""><a href="<?php echo base_url("Purchase/index")?>">DASHBOARD</a></li>
+                    <li class=""><a href="<?php echo base_url("Purchase/index")?>">SALES STATISTICS</a></li>
+                    <li class=""><a href="<?php echo base_url("Purchase/suppliers")?>">SUPPLIERS</a></li>
+                    <li class=""><a href="<?php echo base_url("Purchase/customers")?>">CUSTOMERS</a></li>
+                    <li class=""><a href="<?php echo base_url("Purchase/profile")?>">PROFILE</a></li>
                 </ul>
             </div>
         </nav>
@@ -58,22 +58,10 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class=""><a href="<?php echo base_url("Purchase/index")?>">DASHBOARD</a></li>
-                        <li class=""><a href="#">SALES STATISTICS</a></li>
-                        <li class=""><a href="#">SALES HISTORY</a></li>
-                        <li class=""><a href="#">CUSTOMERS</a></li>
-                        <li class=""><a href="#">PROFILE</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
+                        <li class=""><a href="<?php echo base_url("Purchase/index")?>">SALES STATISTICS</a></li>
+                        <li class=""><a href="<?php echo base_url("Purchase/suppliers")?>">SUPPLIERS</a></li>
+                        <li class=""><a href="<?php echo base_url("Purchase/suppliers")?>">CUSTOMERS</a></li>
+                        <li class=""><a href="<?php echo base_url("Purchase/profile")?>">PROFILE</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
