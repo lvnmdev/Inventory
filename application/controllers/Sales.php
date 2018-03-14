@@ -30,11 +30,11 @@ class Sales extends CI_Controller {
     }
 
     public function profile(){
-        $data['pageTitle'] = 'Petalia Furnitures';
+		$data['pageTitle'] = 'Petalia Furnitures';
 
-		$data['content'] = 'sales-views/profile';	
+		$data['content'] = 'employee/profile';
 		$this->load->view('template/sales/content', $data);
-    }
+	}
 }
 
 ?>

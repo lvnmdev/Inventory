@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-sm-12 col-xs-12 col-md-6">
                         <div class="employee-info">
-                            <h5>Welcome! <a href="">Elvin Mendoza</a>! [Admin] | <a href="<?php echo base_url("Main/login")?>">Log Out</a></h5>
+                            <h5>Welcome! <a href="<?php echo base_url("Sales/profile")?>">Elvin Mendoza</a>! [Admin] | <a href="<?php echo base_url("Main/login")?>">Log Out</a></h5>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,6 @@
                     <li class=""><a href="<?php echo base_url("Sales/sales_statistics")?>">SALES STATISTICS</a></li>
                     <li class=""><a href="<?php echo base_url("Sales/sales_history")?>">SALES HISTORY</a></li>
                     <li class=""><a href="<?php echo base_url("Sales/customers")?>">CUSTOMERS</a></li>
-                    <li class=""><a href="<?php echo base_url("Sales/profile")?>">PROFILE</a></li>
                 </ul>
             </div>
         </nav>

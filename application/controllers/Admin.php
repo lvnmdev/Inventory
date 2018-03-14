@@ -8,10 +8,17 @@ class Admin extends CI_Controller {
 		$this->load->view('template/admin/content', $data);
 	}
 
-	public function employee(){
+	public function employee_list(){
 		$data['pageTitle'] = 'Petalia Furnitures';
 
-		$data['content'] = 'admin-views/employee';	
+		$data['content'] = 'employee/employee-list';	
+		$this->load->view('template/admin/content', $data);
+	}
+
+	public function profile(){
+		$data['pageTitle'] = 'Petalia Furnitures';
+
+		$data['content'] = 'employee/profile';	
 		$this->load->view('template/admin/content', $data);
 	}
 }

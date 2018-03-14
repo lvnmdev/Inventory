@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-sm-12 col-xs-12 col-md-6">
                         <div class="employee-info">
-                            <h5>Welcome! <a href="">Elvin Mendoza</a>! [Admin] | <a href="<?php echo base_url("Main/login")?>">Log Out</a></h5>
+                            <h5>Welcome! <a href="<?php echo base_url("Purchase/profile")?>">Elvin Mendoza</a>! [Admin] | <a href="<?php echo base_url("Main/login")?>">Log Out</a></h5>
                         </div>
                     </div>
                 </div>
@@ -35,10 +35,9 @@
             <div class="text-center">
                 <ul class="breadcrumb">
                     <li class=""><a href="<?php echo base_url("Purchase/index")?>">DASHBOARD</a></li>
-                    <li class=""><a href="<?php echo base_url("Purchase/index")?>">SALES STATISTICS</a></li>
+                    <li class=""><a href="<?php echo base_url("Purchase/purchase_order")?>">PURCHASE ORDER</a></li>
+                    <li class=""><a href="<?php echo base_url("Purchase/purchase_history")?>">PURCHASE HISTORY</a></li>
                     <li class=""><a href="<?php echo base_url("Purchase/suppliers")?>">SUPPLIERS</a></li>
-                    <li class=""><a href="<?php echo base_url("Purchase/customers")?>">CUSTOMERS</a></li>
-                    <li class=""><a href="<?php echo base_url("Purchase/profile")?>">PROFILE</a></li>
                 </ul>
             </div>
         </nav>
@@ -58,10 +57,9 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class=""><a href="<?php echo base_url("Purchase/index")?>">DASHBOARD</a></li>
-                        <li class=""><a href="<?php echo base_url("Purchase/index")?>">SALES STATISTICS</a></li>
+                        <li class=""><a href="<?php echo base_url("Purchase/purchase_order")?>">PURCHASE ORDER</a></li>
+                        <li class=""><a href="<?php echo base_url("Purchase/purchase_history")?>">PURCHASE HISTORY</a></li>
                         <li class=""><a href="<?php echo base_url("Purchase/suppliers")?>">SUPPLIERS</a></li>
-                        <li class=""><a href="<?php echo base_url("Purchase/suppliers")?>">CUSTOMERS</a></li>
-                        <li class=""><a href="<?php echo base_url("Purchase/profile")?>">PROFILE</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
