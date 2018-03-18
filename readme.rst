@@ -1,6 +1,6 @@
 #########
-#Inventory System
-##Petalia Furnitures
+Inventory System
+Petalia Furnitures
 #########
 created with:
 *CodeIgniter Framework
