@@ -6,5 +6,6 @@
                 Petalia Furnitures' is the #1 Trusted retailee in Cagayan de Oro City, Philippines, selecting the best furnitures that matches your style in your homes according to your preferences.
             </p>
         </section>
+        <section></section>
     </article>
 </div>

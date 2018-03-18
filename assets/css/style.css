@@ -68,13 +68,21 @@ body {
 section {
 	margin: 2em 0;
 	border-top: 1px solid black;
-	padding: 20px;
+	padding: 10px;
 	overflow: hidden;
 }
 
-section h3 {
+section h3,
+section h1,
+section a {
 	text-align: center;
 	color: black;
+}
+
+section a:hover {
+	color: black;
+	font-size: 48px;
+	transition: font-size .15s ease-in-out;
 }
 
 section p {
@@ -125,7 +133,7 @@ section p {
 /* Header */
 
 .header-cover {
-	background-image: url('http://localhost/projects/inventory/assets/banner/banner.jpg');
+	background-image: url('http://localhost/inventory/assets/banner/banner.jpg');
 	background-size: cover;
 	width: 100%;
 	height: 300px;
@@ -205,8 +213,8 @@ header .search .search-container {
 	overflow: hidden;
 }
 
-header .search .search-container:focus {
-	border: 2px solid gray;
+header .search .search-container:hover {
+	border: 2px solid gray !important;
 	transition: border .3s ease-in-out;
 }
 

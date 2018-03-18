@@ -27,8 +27,5 @@
 				</div>
 			</form>
         </section>
-        <section>
-            
-        </section>
 	</article>
 </div>

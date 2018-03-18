@@ -15,11 +15,12 @@
                 <p>A: Yes, but outside of the area of Misamis Oriental requires additional payment for shipment.</p><br>
 
                 <p>Q: Do you accept credit cards or debit cards?</p>
-                <p>A: Yes.</p><br>
+                <p>A: No.</p><br>
 
                 <p>Q: Do you accept Cash-on-Deliver?</p>
                 <p>A: Yes.</p>
             </div>
         </section>
+        <section></section>
     </article>
 </div>

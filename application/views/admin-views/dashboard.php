@@ -5,9 +5,7 @@
 			<section>
 				<div class="row">
 					<div class="col-md-12">
-                        <hr>
                         <h1 class="page-head-line">Dashboard</h1>
-                        <hr>
 					</div>
 				</div>
 			</section>

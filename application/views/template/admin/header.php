@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css");?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/datatables.min.css');?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/responsive.bootstrap.min.css');?>"> 
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/fontawesome-all.min.css");?>">
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/admin.css"); ?>"> 
+    <link rel="stylesheet" href="<?php echo base_url("assets/css/fontawesome-all.css");?>">
+    <link rel="stylesheet" href="<?php echo base_url("assets/css/admin.css"); ?>">
     <title>Petalia Furnitures</title>
 </head>
 
@@ -62,7 +62,6 @@
                         <li class=""><a href="<?php echo base_url("Admin/sales_statistics")?>">SALES STATISTICS</a></li>
                         <li class=""><a href="<?php echo base_url("Admin/sales_history")?>">SALES HISTORY</a></li>
                         <li class=""><a href="<?php echo base_url("Admin/employee_list")?>">EMPLOYEE LIST</a></li>
-                        <li class=""><a href="<?php echo base_url("Admin/profile")?>">PROFILE</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
