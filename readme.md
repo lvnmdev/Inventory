@@ -1,5 +1,5 @@
 # Inventory System
-## Petalia Furnitures
+## Petalia Furnitures by Students from USTP BSIT-3R3
 
 Created with:
 - CodeIgniter Framework
@@ -12,4 +12,4 @@ Created with:
 - Bootstrap3
 - Font-Awesome
 
-Students from USTP BSIT-3R3
+
