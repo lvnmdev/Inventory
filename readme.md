@@ -1,5 +1,5 @@
-#Inventory System
-##Petalia Furnitures
+# Inventory System
+## Petalia Furnitures
 
 Created with:
 - CodeIgniter Framework
