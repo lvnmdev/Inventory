@@ -55,41 +55,48 @@ class Main extends CI_Controller {
 
 	//Functionals
 
-	public function register(){
-		$this->load->model('CustomerAcc','customeracc');
+	public function registerCustomer(){
+		$result=$this->customer->addCustomer();
+		$msg['success'] = false;
+		$msg['type'] = 'add';
+		if($result){
+			$msg['success'] = true;
+		}
+		echo json_encode($msg);
+	}
 
-		if($this->input->post('password') == $this->input->post('repassword')){
-			$table = "tblcustomers";
-			$data = array(
-				'custemail' => $this->security->xss_clean($this->input->post('email')),
-				'custusername' => $this->security->xss_clean($this->input->post('username')),
-				'custfname' => $this->security->xss_clean($this->input->post('name')),
-				'custlname' => $this->security->xss_clean($this->input->post('surname')),
-				'custsex' => $this->security->xss_clean($this->input->post('sex')),
-				'custpassword' => $this->security->xss_clean($this->input->post('password')),
-				'billadd' => $this->security->xss_clean($this->input->post('bill-add')),
-				'deliveradd' => $this->security->xss_clean($this->input->post('deliver-add'))
+	public function loginCustomer(){
+		$return=$this->customer->loginCustomer();
+		$msg['success'] = false;
+		if($return[1]){
+			$msg['success'] = true;
+			// set session
+			$session_data = array(
+				'username' => ucfirst($return[0]->username),
+				'email' => ($return[2]->custemail),
+				'sex' => ($return[2]->custsex),
+				'name' => ($return[2]->custfname." ".$return[2]->custlname),
+				'billadd' => ($return[2]->billadd),
+				'deladd' => ($return[2]->deliveradd),
+				'privilege' => ($return[0]->usertype),
 			);
 
-			$result = $this->customeracc->create($table, $data);
+			$this->session->set_userdata($session_data);
+			$msg['data'] = $this->session->userdata('privilege');
 
-			if($result){
-				$server['msg'] = "Successfully Added";	
-				$server['status_code'] = 1;
-			}
-			else{
-				$server['msg'] = "Failed to add";
-				$server['status_code'] = 0;
-			}	
-		}
-		else{
-			$server['msg'] = "Password doesn't match";
-			$server['status_code'] = 0;
-		}
-		
+		}		
+		echo json_encode($msg);
+	}
 
-		$server['content'] = 'common/registration';
-		$server['pageTitle'] = 'Petalia Furnitures';
-		$this->load->view('template/customer/content', $server);
+	// logout
+	public function logout(){
+		$this->session->sess_destroy();
+		redirect('Main/index');
+	}
+
+	public function profile(){
+		$data['pageTitle'] = 'Petalia Furnitures';
+		$data['content'] = 'customers/profile';
+		$this->load->view('template/customer/content',$data);
 	}
 }

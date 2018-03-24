@@ -11,12 +11,11 @@ $('#addEmp').click(function () {
 
 //Create & Edit
 $('#btnSubmit').click(function () {
-    var url = $('#myForm').attr('action');
     var data = $('#myForm').serialize();
     $.ajax({
         type: 'ajax',
         method: 'post',
-        url: url,
+        url: base_url+'Admin/addEmployee',
         data: data,
         async: true,
         success: function (response) {
@@ -31,7 +30,6 @@ $('#btnSubmit').click(function () {
                 }
                 $('.alert-success').html('Employee ' + type + ' successfully').fadeIn().delay(4000).fadeOut('slow');
                 showAllEmployee();
-
 
             } else {
                 alert('Error');

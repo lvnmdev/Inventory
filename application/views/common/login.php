@@ -21,7 +21,7 @@
 				<div class="col-sm-12 col-xs-12 col-md-6">
 					<label>Not yet registered?</label>
 					<br/>
-					<a href="<?= base_url(" Main/registration "); ?>">
+					<a href="<?= base_url("Main/registration "); ?>">
 						<button type="button" class="btn">Register Here!</button>
 					</a>
 				</div>

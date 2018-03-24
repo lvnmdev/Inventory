@@ -6,42 +6,50 @@ class CustomerAcc extends CI_Model {
 		parent::__construct();
 	}
 
-	public function isAccountExist($data){
-		$this->db->select('*');
-		$this->db->from('tblcustomers');
-		$this->db->where('custusername', $data['username']);
-		$this->db->where('custpassword', $data['password']);
+	public function loginCustomer(){
+		$user = $this->input->get('username');
+		$pass = $this->input->get('password');
+		$this->db->where('username', $user);
+		$this->db->where('userpass', $pass);
+		$query = $this->db->get('tblusers');
 
-		$result[0] =  $this->db->get();
-		
-		if($result[0]->num_rows() == 1){
-			$result[0] = $result[0]->row();
+
+		if($query->num_rows()==1){
+			$getdata = $this->db->select('*')->from('tblcustomers')->where('username', $user)->get();
+
+			$result[0] = $query->row();
 			$result[1] = true;
+			$result[2] = $getdata->row();
 			return $result;
 		}else{
 			$result[1] = false;
 			return $result;
 		}
+
+
 	}
 
-	public function create($table, $data){
-	    return $this->db->insert($table, $data);
+	public function addCustomer(){
+		$field = array(
+				'custemail' => $this->input->post('email'),
+				'username' => $this->input->post('username'),
+				'custsex' => $this->input->post('sex'),
+				'custfname' => $this->input->post('name'),
+				'custlname' => $this->input->post('surname'),
+				'billadd' => $this->input->post('bill-add'),
+				'deliveradd' => $this->input->post('deliver-add')
+			);
+		$field2 = array(
+				'username' => $this->input->post('username'),
+				'userpass' => $this->input->post('password')
+			);
+		$q1 = $this->db->insert('tblusers',$field2);
+		$q2 = $this->db->insert('tblcustomers',$field);
+
+		if ($q1&&$q2){
+			return true;
+		} 
+
 	}
-
-	// public function read($data = null){
-	// 	if($data != null){
-	// 		return $this->db->select('*')->from('tblaccounts')->where('schoolid', $data)->get()->result();
-	// 	}
-
-	// 	return $this->db->select('*')->from('tblaccounts')->get()->result(); 
-	// }	
-
-	// public function update(){
-
-	// }
-
-	// public function delete(){
-
-	// }
 }
 ?>
