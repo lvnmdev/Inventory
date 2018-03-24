@@ -31,10 +31,9 @@
                 <div class="col-xs-6 col-sm-6 col-md-6">
                     <div class="footer-legal-policy">
                         <ul>
-                            <li><small><a href="#">Privacy Policy</a></small></li>
+                            <li><small><a href="<?php echo base_url('Main/privacy_policy'); ?>">Privacy Policy</a></small></li>
                             <li><small><a href="#">Terms of Use</a></small></li>
                             <li><small><a href="#">Warranty</a></small></li>
-                            <li><small><a href="#">Site Map</a></small></li>
                         </ul>
                     </div>
                 </div>
@@ -43,7 +42,7 @@
     </footer>
     <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.js');?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.js');?>"></script>
-    <script type="text/javascript" src="<?php echo base_url('assets/js/script.js');?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/js/admin.js');?>"></script>
     <script defer src="<?php echo base_url('assets/js/fontawesome-all.min.js');?>"></script>
     </body>
 </html>

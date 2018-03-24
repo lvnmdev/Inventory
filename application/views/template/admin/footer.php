@@ -37,8 +37,4 @@
 <script type="text/javascript" src="<?php echo base_url('assets/js/datatables.min.js');?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/responsive.bootstrap.min.js');?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/fontawesome-all.min.js');?>"></script>
-<script>
-	$(function () {
-		$('#table_id').dataTable();
-	});
-</script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/admin.js');?>"></script>

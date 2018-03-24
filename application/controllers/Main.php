@@ -46,6 +46,12 @@ class Main extends CI_Controller {
 		$this->load->view('template/customer/content', $data);
 	}
 
+	public function privacy_policy(){
+		$data['pageTitle'] = 'Petalia Furnitures';
+
+		$data['content'] = 'common/privacy-policy';	
+		$this->load->view('template/customer/content', $data);
+	}
 
 	//Functionals
 
