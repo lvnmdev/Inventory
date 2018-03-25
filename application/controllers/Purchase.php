@@ -29,13 +29,6 @@ class Purchase extends CI_Controller {
 		$this->load->view('template/purchase/content', $data);
 	}
 
-	public function suppliers(){
-		$data['pageTitle'] = 'Petalia Furnitures';
-
-		$data['content'] = 'purchase-views/suppliers-list';
-		$this->load->view('template/purchase/content', $data);
-	}
-
 	public function profile(){
 		$data['pageTitle'] = 'Petalia Furnitures';
 

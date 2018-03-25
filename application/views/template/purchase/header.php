@@ -39,7 +39,7 @@
                     <li class=""><a href="<?php echo base_url("Purchase/index")?>">DASHBOARD</a></li>
                     <li class=""><a href="<?php echo base_url("Purchase/purchase_order")?>">PURCHASE ORDER</a></li>
                     <li class=""><a href="<?php echo base_url("Purchase/purchase_history")?>">PURCHASE HISTORY</a></li>
-                    <li class=""><a href="<?php echo base_url("Purchase/suppliers")?>">SUPPLIERS</a></li>
+                    <li class=""><a href="<?php echo base_url("Suppliers/list")?>">SUPPLIERS</a></li>
                 </ul>
             </div>
         </nav>

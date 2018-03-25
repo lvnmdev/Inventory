@@ -2,6 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Main extends CI_Controller {
+	public function __construct(){
+		parent::__construct();
+		$this->load->model('CustomerAcc');
+	}
 	//Navigations
 	public function index(){
 		$data['pageTitle'] = 'Petalia Furnitures';
@@ -56,7 +60,7 @@ class Main extends CI_Controller {
 	//Functionals
 
 	public function registerCustomer(){
-		$result=$this->customer->addCustomer();
+		$result=$this->CustomerAcc->addCustomer();
 		$msg['success'] = false;
 		$msg['type'] = 'add';
 		if($result){
@@ -66,9 +70,10 @@ class Main extends CI_Controller {
 	}
 
 	public function loginCustomer(){
-		$return=$this->customer->loginCustomer();
+		$return = $this->CustomerAcc->loginCustomer();
 		$msg['success'] = false;
 		if($return[1]){
+			
 			$msg['success'] = true;
 			// set session
 			$session_data = array(

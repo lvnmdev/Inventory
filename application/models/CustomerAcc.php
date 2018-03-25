@@ -7,8 +7,8 @@ class CustomerAcc extends CI_Model {
 	}
 
 	public function loginCustomer(){
-		$user = $this->input->get('username');
-		$pass = $this->input->get('password');
+		$user = $this->input->post('username');
+		$pass = $this->input->post('password');
 		$this->db->where('username', $user);
 		$this->db->where('userpass', $pass);
 		$query = $this->db->get('tblusers');
