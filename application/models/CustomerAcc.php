@@ -41,7 +41,8 @@ class CustomerAcc extends CI_Model {
 			);
 		$field2 = array(
 				'username' => $this->input->post('username'),
-				'userpass' => $this->input->post('password')
+				'userpass' => $this->input->post('password'),
+				'usertype' => 'Customer'
 			);
 		$q1 = $this->db->insert('tblusers',$field2);
 		$q2 = $this->db->insert('tblcustomers',$field);

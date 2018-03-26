@@ -3,7 +3,7 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6">
                     <div class="logo">
-                        <strong><h3><a href="<?php echo base_url("Main/index")?>"><?php echo $pageTitle ?></a></small></h3>
+                        <strong><h3><a href="<?php echo base_url("Main/index")?>"><?php echo $pageTitle ?></a></h3></strong>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6">
@@ -40,8 +40,12 @@
             </div>
         </div>
     </footer>
+    <script>
+        var base_url = "<?php echo base_url() ?>";
+    </script>
     <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.js');?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.js');?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/js/customer.js');?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/js/script.js');?>"></script>
     <script defer src="<?php echo base_url('assets/js/fontawesome-all.min.js');?>"></script>
     </body>

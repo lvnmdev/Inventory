@@ -1,5 +1,12 @@
 <?php
     defined('BASEPATH') OR exit('No direct script access allowed');
+    if(isset($_SESSION['privilege'])){
+        if($_SESSION['privilege']=="Customer"){
+            redirect('Main/index');
+        }
+    }else{
+         redirect('Main/index');
+    }
 ?>
 <html>
 <head>
@@ -9,7 +16,8 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/datatables.min.css');?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/responsive.bootstrap.min.css');?>"> 
     <link rel="stylesheet" href="<?php echo base_url("assets/css/fontawesome-all.min.css");?>">
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/admin.css"); ?>"> 
+    <link rel="stylesheet" href="<?php echo base_url("assets/css/admin.css"); ?>">
+    <link rel="stylesheet" href="<?php echo base_url("assets/css/shop-homepage.css"); ?>">
     <title>Petalia Furnitures</title>
 </head>
 
@@ -20,17 +28,18 @@
                 <div class="row">
                     <div class="col-sm-12 col-xs-12 col-md-6">
                         <div class="logo">
-                            <h1><a href="<?php echo base_url("Purchase/index")?>"><?php echo $pageTitle ?></a></h1><h1></h1>
+                            <h1><a href="<?php echo base_url("Admin/index")?>"><?php echo $pageTitle ?></a></h1><h1></h1>
                         </div>
                     </div>
                     <div class="col-sm-12 col-xs-12 col-md-6">
                         <div class="employee-info">
-                            <h5>Welcome! <a href="<?php echo base_url("Purchase/profile")?>">Elvin Mendoza</a>! [Admin] | <a href="<?php echo base_url("Main/login")?>">Log Out</a></h5>
+                            <h5>Welcome! <a href="<?php echo base_url("Admin/profile")?>"><?php echo $this->session->userdata('username');?></a>! [<?php echo $this->session->userdata('position');?>] | <a href="<?php echo base_url("Main/logout")?>">Log Out</a></h5>
                         </div>
                     </div>
                 </div>
             </div> 
         </div>
+        
         
         <!-- For Desktop Users -->
         <nav class="nav-web">

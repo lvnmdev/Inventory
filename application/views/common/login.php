@@ -1,3 +1,8 @@
+<?php
+    if(isset($_SESSION['username'])){
+        redirect('Main/profile');
+    }
+?>
 <div class="container">
 	<article>
 		<section>
@@ -6,16 +11,16 @@
 			</div>
 		</section>
 		<section>
-			<form action="<?= base_url('site/login'); ?>" method="POST">
+			<form id="loginform" method="POST">
 				<div class="col-sm-12 col-xs-12 col-md-6">
 					<div class="form-group">
-						<input type="email" class="form-control" placeholder="Email" name="email" required>
+						<input type="username" class="form-control" placeholder="Username" name="username" required>
 					</div>
 					<div class="form-group">
 						<input type="password" class="form-control" placeholder="Password" name="password" required>
 					</div>
 					<div class="form-group">
-						<button type="submit" class="form-control btn btn-primary">Login</button>
+						<button type="submit" class="form-control btn btn-primary" id="loginbtn">Login</button>
 					</div>
 				</div>
 				<div class="col-sm-12 col-xs-12 col-md-6">

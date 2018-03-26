@@ -37,7 +37,7 @@
                     </div>
                     <div class="col-sm-12 col-xs-12 col-md-3">
                         <div class="login">
-                            <p><a href="<?php echo base_url("Main/login")?>">SIGN-IN</a> | <a href="<?php echo base_url("Main/registration")?>">SIGN-UP</a></p>
+                           <h5>Welcome <a href="<?php echo base_url("Main/profile")?>"><?php echo $this->session->userdata('username');?></a>! | <a href="<?php echo base_url("Main/logout")?>">Log Out</a></h5>
                         </div>
                     </div>
                 </div>

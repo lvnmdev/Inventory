@@ -79,11 +79,11 @@ section a {
 	color: black;
 }
 
-section a:hover {
+/* section a:hover {
 	color: black;
 	font-size: 48px;
 	transition: font-size .15s ease-in-out;
-}
+} */
 
 section p {
 	font-family: sabon, Georgia, Times, Serif;

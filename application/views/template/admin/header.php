@@ -1,5 +1,12 @@
 <?php
     defined('BASEPATH') OR exit('No direct script access allowed');
+    if(isset($_SESSION['privilege'])){
+        if($_SESSION['privilege']=="Customer"){
+            redirect('Main/index');
+        }
+    }else{
+         redirect('Main/index');
+    }
 ?>
 <html>
 <head>
@@ -25,7 +32,7 @@
                     </div>
                     <div class="col-sm-12 col-xs-12 col-md-6">
                         <div class="employee-info">
-                            <h5>Welcome! <a href="<?php echo base_url("Admin/profile")?>">Elvin Mendoza</a>! [Admin] | <a href="<?php echo base_url("Main/login")?>">Log Out</a></h5>
+                            <h5>Welcome! <a href="<?php echo base_url("Admin/profile")?>"><?php echo $this->session->userdata('username');?></a>! [<?php echo $this->session->userdata('position');?>] | <a href="<?php echo base_url("Main/logout")?>">Log Out</a></h5>
                         </div>
                     </div>
                 </div>

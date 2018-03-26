@@ -6,7 +6,7 @@
             </div>
         </section>
         <section>
-            <form action="<?= base_url('Main/register'); ?>" method="post">
+            <form action="" method="post" id="regform">
                 <div class="form-group">
                     <label>Email</label>
                     <input class="form-control" type="email" name="email" placeholder="user@mail.com" required>
@@ -45,7 +45,7 @@
                     <input class="form-control" type="text" name="deliver-add" placeholder="Deliver Address" required>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn">Register</button>
+                    <button type="submit" class="btn" id="regbtn">Register</button>
                 </div>
             </form>	
         </section>

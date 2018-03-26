@@ -12,53 +12,68 @@
 				<div class=" col-sm-12 toppad">
 					<div class="panel panel-info">
 						<div class="panel-heading">
-							<h3 class="panel-title" style="font-size:24px;"><i class="far fa-address-card"  style="font-size:36px;"></i> Elvin Donn Firmalino Mendoza</h3>
+							<h3 class="panel-title" style="font-size:24px;">
+								<i class="far fa-address-card" style="font-size:36px;"></i> <?php echo $this->session->userdata('name');?></h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
 								<div class="col-md-3 button" align="center">
 									<img alt="User Pic" src="img/ed.jpg" class="img-square img-responsive">
-									<a href="#" class="btn btn-primary"><i class="fa fa-cog"></i> Edit Profile</a>
-									<a href="#" class="btn btn-danger"><i class="fas fa-sign-out-alt"></i> Logout</a>
+									<a href="#" class="btn btn-primary">
+										<i class="fa fa-cog"></i> Edit Profile</a>
+									<a href="#" class="btn btn-danger">
+										<i class="fas fa-sign-out-alt"></i> Logout</a>
 								</div>
 								<div class=" col-md-9 col-lg-9 ">
 									<table class="table table-user-information">
 										<tbody>
 											<tr>
 												<th>Position:</th>
-												<td>Admin</td>
+												<td>
+													<?php echo $this->session->userdata('position');?>
+												</td>
 											</tr>
 											<tr>
 												<th>Date of Birth</th>
-												<td>06/13/1999</td>
+												<td>
+													<?php echo $this->session->userdata('dob');?>
+												</td>
 											</tr>
 											<tr>
 												<th>Sex</th>
-												<td>Male</td>
+												<td>
+													<?php echo $this->session->userdata('sex');?>
+												</td>
 											</tr>
 											<tr>
 												<th>Home Address</th>
-												<td>Cagayan De Oro, Philippines</td>
+												<td>
+													<?php echo $this->session->userdata('address');?>
+												</td>
 											</tr>
 											<tr>
 												<th>Email</th>
 												<td>
-													info@support.com
+													<?php echo $this->session->userdata('email');?>
 												</td>
 											</tr>
 											<tr>
 												<th>Phone Number</th>
 												<td>
-													555-4567-890(Mobile)
+													<?php echo $this->session->userdata('phoneno');?>
 												</td>
 											</tr>
 											<tr>
 												<th>Hire date:</th>
-												<td>06/23/2013</td>
+												<td>
+													<?php echo $this->session->userdata('date-registered');?>
+												</td>
 											</tr>
 											<tr>
 												<th>Profile updated:</th>
-												<td>06/23/2013</td>
+												<td>
+													<?php echo $this->session->userdata('date-updated');?>
+												</td>
 											</tr>
 										</tbody>
 									</table>

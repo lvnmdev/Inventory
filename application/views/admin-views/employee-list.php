@@ -18,8 +18,8 @@
 								<th scope="col">Sex</th>
 								<th scope="col">Position</th>
 								<th scope="col">Email</th>
+								<th scope="col">Username</th>
 								<th scope="col">Password</th>
-								<th scope="col">Contact Number</th>
 								<th scope="col">Date Registered</th>
 								<th scope="col">Date Updated</th>
 								<th scope="col">Action</th>
@@ -48,6 +48,12 @@
 								<label for="name" class="label-control col-md-4">Employee ID</label>
 								<div class="col-md-8">
 									<input type="text" name="txtEmployeeID" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="name" class="label-control col-md-4">Username</label>
+								<div class="col-md-8">
+									<input type="text" name="txtEmployeeUsername" class="form-control">
 								</div>
 							</div>
 							<div class="form-group">

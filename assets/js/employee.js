@@ -7,15 +7,19 @@ $('#addEmp').click(function () {
     $('#myModal').find('.modal-title').text('Add New Employee');
     $('#myForm').attr('action', base_url+'Admin/addEmployee');
     $('#btnSubmit').html('Add');
+    $('input').val('');
+    $('#btnSubmit').val('addEmployee');
 });
 
 //Create & Edit
 $('#btnSubmit').click(function () {
     var data = $('#myForm').serialize();
+    var submitType = $('#btnSubmit').val();
+    console.log(submitType);
     $.ajax({
         type: 'ajax',
         method: 'post',
-        url: base_url+'Admin/addEmployee',
+        url: base_url+'Admin/'+submitType,
         data: data,
         async: true,
         success: function (response) {
@@ -80,6 +84,7 @@ $('#showdata').on('click', '.item-edit', function () {
     $('#myModal').find('.modal-title').text('Edit Employee');
     $('#myForm').attr('action', base_url+'Admin/updateEmployee');
     $('#btnSubmit').html('Save');
+    $('#btnSubmit').val('updateEmployee');
     $.ajax({
         method: 'get',
         type: 'ajax',
@@ -92,13 +97,15 @@ $('#showdata').on('click', '.item-edit', function () {
         success: function (data) {  //to display datas in edit
             $('input[name=txtId]').val(data.empid);
             $('input[name=txtEmployeeID]').val(data.empid);
+            $('input[name=txtEmployeeUsername]').val(data.empusername);
             $('input[name=txtEmployeeFirstName]').val(data.empfname);
             $('input[name=txtEmployeeMiddleName]').val(data.empmname);
             $('input[name=txtEmployeeLastName]').val(data.emplname);
             $('input[name=txtEmployeeEmail]').val(data.empemail);
             $('input[name=txtEmployeePassword]').val(data.emppassword);
-            $('input[name=txtEmployeeSex]').val(data.empsex);
-            $('input[name=txtEmployeePosition]').val(data.empposition);
+            $('select[name=txtEmployeeSex]').val(data.empsex);
+            $('select[name=txtEmployeePosition]').val(data.empposition);
+            console.log(data);
         },
         error: function () {
             alert('Could not edit');
@@ -122,8 +129,8 @@ function showAllEmployee() {
                             '<td>'+data[i].empsex+'</td>'+
                             '<td>'+data[i].empposition+'</td>'+
                             '<td>'+data[i].empemail+'</td>'+
+                            '<td>'+data[i].username+'</td>'+
                             '<td>'+data[i].emppassword+'</td>'+
-                            '<td>'+data[i].empphoneno+'</td>'+
                             '<td>'+data[i].empdateofreg+ '</td>'+
                             '<td>'+data[i].empdateupdated+ '</td>'+
                             '<td>'+
